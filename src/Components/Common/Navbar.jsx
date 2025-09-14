@@ -8,14 +8,26 @@ function Navbar() {
 
   return (
     <div>
-      <div className="py-4 ">
+      <div className="py-4">
         <ul className="flex justify-between px-5">
-          <li className="text-[18px] flex items-center ">
+     
+          <li className="text-[18px] flex items-center">
             fabrica
             <span className="text-[6px] border border-black rounded-4xl px-[3px]">
               R
             </span>
           </li>
+
+          
+          {!isClicked && (
+            <>
+              {NavNAme.map((value, index) => (
+                <li key={index}>{value}</li>
+              ))}
+            </>
+          )}
+
+          
           {isClicked && (
             <ul className="flex flex-col">
               {NavNAmeTwo.map((value, index) => (
@@ -24,17 +36,12 @@ function Navbar() {
             </ul>
           )}
 
+         
           <li
-            onClick={() => {
-              if (isClicked) {
-                setIsClicked(false);
-              } else {
-                setIsClicked(true);
-              }
-            }}
+            onClick={() => setIsClicked(!isClicked)}
             className="flex justify-center items-center flex-col gap-2 cursor-pointer"
           >
-            <div className="border-b-3 px-7 "></div>
+            <div className="border-b-3 px-7"></div>
             <div className="border-b-3 px-7"></div>
           </li>
         </ul>
