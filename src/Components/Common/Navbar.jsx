@@ -7,7 +7,7 @@ function Navbar() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div>
+    <div className="">
       <div className="py-4">
         <ul className="flex justify-between px-5">
           <li className="text-[18px] z-20 flex items-center">
