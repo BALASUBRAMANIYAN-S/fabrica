@@ -16,10 +16,27 @@ function Navbar() {
               R
             </span>
           </li>
-          {NavNAme.map((Value,index)=>{
-            return <li key={index}>{Value}</li>
-          })}
-          <li className="flex justify-center items-center flex-col gap-2 cursor-pointer"> <div className="border-b-3 px-7 "></div> <div className="border-b-3 px-7"></div> </li>
+          {isClicked && (
+            <ul className="flex flex-col">
+              {NavNAmeTwo.map((value, index) => (
+                <li key={index}>{value}</li>
+              ))}
+            </ul>
+          )}
+
+          <li
+            onClick={() => {
+              if (isClicked) {
+                setIsClicked(false);
+              } else {
+                setIsClicked(true);
+              }
+            }}
+            className="flex justify-center items-center flex-col gap-2 cursor-pointer"
+          >
+            <div className="border-b-3 px-7 "></div>
+            <div className="border-b-3 px-7"></div>
+          </li>
         </ul>
       </div>
     </div>
