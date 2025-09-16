@@ -50,12 +50,39 @@ function Projects() {
 
         {/*Project Cards*/}
 
-        <div className="">
-          <ProjectCard 
-          Heading="Boltshift."
-          year="2025"
-          />
-        </div>
+       <div className="grid xl:grid-cols-2 grid-cols-1 gap-6">
+  <ProjectCard
+    Heading="Boltshift."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+  <ProjectCard
+    Heading="Ephemeral."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+  <ProjectCard
+    Heading="Powersurge."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+  <ProjectCard
+    Heading="Mastermail."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+  <ProjectCard
+    Heading="Warpspeed."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+  <ProjectCard
+    Heading="CloudWatch."
+    year="2025"
+    image={"/ProjectImage.avif"}
+  />
+</div>
+
       </div>
     </div>
   );
