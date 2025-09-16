@@ -1,7 +1,7 @@
 import HomeCard from "@/Components/Common/HomeCard";
 import { IoIosAddCircle } from "react-icons/io";
 function Projects() {
-     const logos = [
+  const logos = [
     { src: "/logos/logo1.svg", alt: "Logo 1" },
     { src: "/logos/logo2.svg", alt: "Logo 2" },
     { src: "/logos/logo3.svg", alt: "Logo 3" },
@@ -13,17 +13,22 @@ function Projects() {
     <div className="">
       <ul className="flex gap-[10%] px-10 py-7">
         <li className="flex flex-row items-center gap-2">
-        <IoIosAddCircle />Our clients
+          <IoIosAddCircle />
+          Our clients
         </li>
         <li>(2016-25©)</li>
       </ul>
-{/*Images for Card */}
-       <div className="px-10 grid grid-cols-2 sm:grid-cols-3 gap-3 md:grid-cols-6 ">
-      {logos.map((logo, index) => (
-        <HomeCard key={index} src={logo.src} alt={logo.alt} />
-      ))}
-    </div>
-{/*Projects */}
+      {/*Images for Card */}
+      <div className="px-10 grid grid-cols-2 sm:grid-cols-3 gap-3 md:grid-cols-6 ">
+        {logos.map((logo, index) => (
+          <HomeCard key={index} src={logo.src} alt={logo.alt} />
+        ))}
+      </div>
+      {/*Projects */}
+
+      <div className=""></div>
+      <p>(27)</p>
+      
     </div>
   );
 }
