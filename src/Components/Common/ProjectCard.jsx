@@ -30,7 +30,7 @@ export default function ProjectCard({ Heading, year, image }) {
           className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:blur-sm"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-white text-2xl font-bold px-3 py-1 rounded-lg transition-all duration-500 group-hover:scale-110 group-hover:bg-black/50">
+          <h2 className="text-white text-2xl font-bold px-3 py-1 rounded-lg transition-all duration-500 group-hover:scale-110 ">
             {Heading}
           </h2>
         </div>
