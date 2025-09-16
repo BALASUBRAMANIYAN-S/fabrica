@@ -1,4 +1,5 @@
 import HomeCard from "@/Components/Common/HomeCard";
+import ProjectCard from "@/Components/Common/ProjectCard";
 import { IoIosAddCircle } from "react-icons/io";
 function Projects() {
   const logos = [
@@ -26,9 +27,36 @@ function Projects() {
       </div>
       {/*Projects */}
 
-      <div className=""></div>
-      <p>(27)</p>
-      
+      <div className="px-8">
+        <p>(27)</p>
+        <div className="flex flex-col md:flex-row md:items-center gap-5 md:justify-between">
+          <div>
+            <h1 className="font-bold text-6xl">Projects.</h1>
+            <p className="font-bold text-2xl">©2025</p>
+          </div>
+
+          <p className="text-gray-500 text-[13px] md:max-w-md">
+            <span className="block md:hidden">
+              We’ve helped businesses across industries achieve their goals.
+              Here are some of our recent projects.
+            </span>
+
+            <span className="hidden md:block max-w-3xs">
+              We’ve helped businesses across industries achieve their goals.
+              Here are some of our recent projects. Let’s build yours too.
+            </span>
+          </p>
+        </div>
+
+        {/*Project Cards*/}
+
+        <div className="">
+          <ProjectCard 
+          Heading="Boltshift."
+          year="2025"
+          />
+        </div>
+      </div>
     </div>
   );
 }
