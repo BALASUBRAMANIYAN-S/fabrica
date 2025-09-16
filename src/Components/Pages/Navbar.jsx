@@ -18,7 +18,7 @@ function Navbar() {
           </li>
 
           {!isClicked && (
-            <>
+            <> 
               {NavNAme.map((value, index) => (
                 <div className="flex gap-5">
                   <li key={index}>{value}</li>
