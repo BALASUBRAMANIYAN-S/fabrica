@@ -1,7 +1,7 @@
-function HomeCard() {
+export default function HomeCard({ src, alt }) {
   return (
-    <div>HomeCard</div>
-  )
+    <div className="bg-white h-50 w-full flex items-center justify-center rounded-[14px] shadow-sm">
+      <img src={src} alt={alt} className="max-h-16 max-w-[120px] object-contain" />
+    </div>
+  );
 }
-
-export default HomeCard
