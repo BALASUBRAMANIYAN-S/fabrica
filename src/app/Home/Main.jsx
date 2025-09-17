@@ -1,5 +1,6 @@
 import Hero from "./Hero";
 import Projects from "./Projects";
+import CustomAccordion from "./Services";
 import Testimonials from "./Testimonials";
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
       <Hero />
       <Projects />
       <Testimonials />
+      <CustomAccordion />
     </div>
   );
 }

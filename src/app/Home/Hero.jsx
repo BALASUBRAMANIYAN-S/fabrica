@@ -9,7 +9,6 @@ export default function Hero() {
         <Image
           src="/hero-bg.png"
           alt="hero background"
-          fill
           style={{ objectFit: "cover", objectPosition: "center" }}
           className="filter grayscale contrast-75 brightness-50"
         />
