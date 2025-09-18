@@ -26,7 +26,7 @@ function Projects() {
         ))}
       </div>
       {/*Projects */}
-
+ 
       <div className="px-8">
         <p>(27)</p>
         <div className="flex flex-col md:flex-row md:items-center gap-5 md:justify-between">
